@@ -43,9 +43,9 @@ def main():
             if dist:
                 print(f"거리: {dist}cm")
                 if dist >= 30:
-                    t.fd(10)
+                    t.fd(1)
                 else:
-                    t.bk(10)
+                    t.bk(1)
             time.sleep(0.05)
             
 if __name__ == "__main__":
