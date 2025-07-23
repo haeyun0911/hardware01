@@ -38,16 +38,16 @@ def read_distance():
 
 def main():
     if connect_sensor():
-        for i in range(10):
+        while True:
             dist = read_distance()
             if dist:
                 print(f"거리: {dist}cm")
+                if dist >= 30:
+                    t.fd(1)
+                else:
+                    pass
             time.sleep(0.5)
             
 if __name__ == "__main__":
     main()
-    
-while dist >= 30:
-    t.fd(1)
-    if dist<30:
-        break
+
