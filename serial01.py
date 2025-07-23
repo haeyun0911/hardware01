@@ -1,5 +1,13 @@
 import serial
 import time
+import turtle
+
+s=turtle.getscreen()
+t=turtle.Turtle()
+
+t.shape("turtle")
+
+t.speed(1)
 
 connection= None
 current_distance=0
@@ -38,3 +46,8 @@ def main():
             
 if __name__ == "__main__":
     main()
+    
+while dist >= 30:
+    t.fd(1)
+    if dist<30:
+        break
