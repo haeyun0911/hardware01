@@ -45,8 +45,8 @@ def main():
                 if dist >= 30:
                     t.fd(10)
                 else:
-                    pass
-            time.sleep(0.5)
+                    t.bk(10)
+            time.sleep(0.05)
             
 if __name__ == "__main__":
     main()
