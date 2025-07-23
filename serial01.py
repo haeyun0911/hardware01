@@ -43,7 +43,7 @@ def main():
             if dist:
                 print(f"거리: {dist}cm")
                 if dist >= 30:
-                    t.fd(1)
+                    t.fd(10)
                 else:
                     pass
             time.sleep(0.5)
